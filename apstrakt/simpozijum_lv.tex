@@ -1,0 +1,43 @@
+% Simpozijum Matematika i primene
+% Requires Latex2e!
+\documentclass[cyr]{simposium}
+
+\volume{,Vol. XII}  %%%%%% UPISUJE UREDNIK
+\issue{(1)}        %%%%%% UPISUJE UREDNIK
+\pubyear{2022}     %%%%%% UPISUJE UREDNIK
+\firstpage{1}      %%%%%% UPISUJE UREDNIK
+\lastpage{12}      %%%%%% UPISUJE UREDNIK
+
+%%%%%% NA OVOM MESTU UKLJUCUJETE PAKETE
+%%%%%% Na primer: \usepackage{gclc}
+
+%%%%%% NA OVOM MESTU DEFINISETE LATEX KOMANDE
+%%%%%% Na primer: \newcommand{\const}{\mathop{\mathrm{const}}}
+
+\begin{document}
+\begin{frontmatter}
+
+\title{ Ubla\zh avanje pristrasnosti neuronskih mre\zh a obrtanjem gradijenta}
+
+\author{{\fnms{Lazar} \snm{Vasovi\cc}}}
+\address{Matemati\ch ki fakultet, Univerzitet u Beogradu, Student{}ski trg 16, Beograd\\
+\email{pd212006@alas.matf.bg.ac.rs}}
+
+\runningauthor{ L. Vasovi\cc}
+\runningtitle{ Naslov rada}
+
+\received{\smonth{{  Jul}} \syear{2013}}   %%%%%% UPISUJE UREDNIK
+\revised{\smonth{{  Jul}} \syear{2013}}    %%%%%% UPISUJE UREDNIK
+\accepted{\smonth{{  Jul}} \syear{2013}}   %%%%%% UPISUJE UREDNIK
+
+\maketitle
+
+\begin{abstract}
+    Robusnost modela ma\sh inskog u\ch enja ogleda se u pribli\zh no jednakom uspehu nad raznim podacima. Ukoliko to nije slu\ch aj, model je pristrastan. Poseban problem sa pristrasno\sh \cc u imaju neuronske mre\zh e, budu\cc i da su vrlo fleksibilne i (pre)prilagodljive podacima nad kojima su obu\ch ene. Kao re\sh enje ovog problema, primenjuju se brojne op\sh te tehnike regularizacije, poput slu\ch ajnog izostavljanja neurona. S druge strane, postoje specifi\ch ni pristupi, koji mogu otkloniti neke konkretne izvore pristrasnosti. U radu je predstavljeno obrtanje gradijenta, kao primer takvog pristupa. Ova tehnika odlikuje se grananjem neuronske mre\zh e, pri \ch emu postoji zajedni\ch ki deo, koji se zatim deli na dve grane -- glavnu i suparni\ch ku. Glavna grana re\sh ava konkretan problem (npr. klasifikacija), dok suparni\ch ka otkriva eventualni izvor pristrasnosti (uglavnom domen instance, npr. pol u slu\ch aju ljudi). Prilikom a\zh uriranja parametara modela, zasnovanog na gradijentnoj minimizaciji gre\sh ke, gradijent se obr\cc e (negira) na zajedni\ch kom delu suparni\ch ke grane. Ovime se efektivno otklanja izvor pristrasnosti, pa je rezultuju\cc i model (predstavljen glavnom granom) robusniji. Kao prakti\ch ni doprinos rada, obrtanje gradijenta je primenjeno na poznati skup recenzija sa sajta Amazon, u cilju predvidjanja da li je ocena proizvoda pozitivna ili negativna. Dobijeni rezultati u svim eksperimentima koji uklju\ch uju suparni\ch ku granu bolji su od onih koji je ne uklju\ch uju.
+\end{abstract}
+\begin{keyword}
+   pristrasnost; neuronske mre\zh e; obrtanje gradijenta; suparni\ch ko u\ch enje.
+\end{keyword}
+\end{frontmatter}
+
+\end{document}
